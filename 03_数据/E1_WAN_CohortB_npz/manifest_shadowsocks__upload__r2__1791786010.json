@@ -1,0 +1,20 @@
+{
+  "version": "v3.5.1",
+  "profile": "ss",
+  "label": "shadowsocks",
+  "iface": "offline",
+  "runtime_s": null,
+  "run_id": "shadowsocks__upload__r2__1791786010",
+  "n_sample": 501,
+  "ports": [
+    14443
+  ],
+  "bpf": "(port 14443)",
+  "pcap": "/home/ubuntu/e1_all75/formal_cohortB_newnetwork/shadowsocks/upload/run02/shadowsocks_upload_run02.pcap",
+  "parse_stats": {
+    "packets_seen": 26624,
+    "flows_total": 501,
+    "samples": 501
+  },
+  "ts_done": "2026-10-12 16:54:11"
+}

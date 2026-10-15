@@ -1,0 +1,18 @@
+# 大数据（走 Release 分发）
+03_数据/*
+!03_数据/README_数据.md
+!03_数据/E1_WAN_CohortB_npz/
+
+# 本地分发物
+*.zip
+*.z01
+*.z0*
+*.7z
+*.rar
+
+# 内部过程文件
+**/__pycache__/
+**/*.pyc
+**/*.log
+~$*
+*.bak

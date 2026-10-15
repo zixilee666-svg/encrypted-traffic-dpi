@@ -1,0 +1,20 @@
+{
+  "version": "v3.5.1",
+  "profile": "trojan",
+  "label": "trojan",
+  "iface": "offline",
+  "runtime_s": null,
+  "run_id": "trojan__browse__r2__1791789716",
+  "n_sample": 326,
+  "ports": [
+    14443
+  ],
+  "bpf": "(port 14443)",
+  "pcap": "/home/ubuntu/e1_all75/formal_cohortB_newnetwork/trojan/browse/run02/trojan_browse_run02.pcap",
+  "parse_stats": {
+    "packets_seen": 12754,
+    "flows_total": 326,
+    "samples": 326
+  },
+  "ts_done": "2026-10-12 16:55:14"
+}

@@ -1,0 +1,71 @@
+{
+  "dir": "D:\\Users\\Lenovo\\Desktop\\加密\\主项目\\03_数据\\E1_WAN_CohortB_npz",
+  "checks": [
+    {
+      "name": "C1 文件非空",
+      "pass": true,
+      "detail": "75 个 npz"
+    },
+    {
+      "name": "C2 npz 字段完整",
+      "pass": true,
+      "detail": "75 个文件字段齐全"
+    },
+    {
+      "name": "C3 每类 >= 300",
+      "pass": true,
+      "detail": "总 21765 样本 / 5 类；不足的有 0 类: []"
+    },
+    {
+      "name": "C4 标签纯度（无同流异签）",
+      "pass": true,
+      "detail": "冲突 0 条"
+    },
+    {
+      "name": "C5 五元组泄漏体检",
+      "pass": true,
+      "detail": "5 类；若 C7 远高于文献值（>0.99）说明标签可能由五元组决定"
+    },
+    {
+      "name": "C6 无 NaN/Inf",
+      "pass": true,
+      "detail": "异常值 0 个"
+    },
+    {
+      "name": "C5b 无过度分离（疑似泄漏）",
+      "pass": false,
+      "detail": "micro_P 0.9989；疑似五元组泄漏，需重采"
+    },
+    {
+      "name": "C7 可训练（macro_P>=0.90）",
+      "pass": true,
+      "detail": "macro_P 0.9965（评估用，非赛题口径）"
+    },
+    {
+      "name": "C8 规模充足（>=5000）",
+      "pass": true,
+      "detail": "总样本 21765"
+    }
+  ],
+  "pass": false,
+  "class_counts": {
+    "trojan": 5450,
+    "vless": 5449,
+    "shadowsocks": 4807,
+    "vmess": 4615,
+    "shadowtls": 1444
+  },
+  "leak_check_说明": "C7 若 acc>0.99 且各类完全分离，说明标签由五元组决定，采集设计有问题，需要加 --no-identity 重采",
+  "C7": {
+    "acc": 0.9956,
+    "micro_P": 0.9989,
+    "macro_P": 0.9965,
+    "per_class_P": {
+      "shadowsocks": 1.0,
+      "shadowtls": 1.0,
+      "trojan": 0.9884,
+      "vless": 0.9943,
+      "vmess": 1.0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": "v3.5.1",
+  "profile": "shadowtls",
+  "label": "shadowtls",
+  "iface": "offline",
+  "runtime_s": null,
+  "run_id": "shadowtls__mixed__r1__1791792388",
+  "n_sample": 98,
+  "ports": [
+    14443
+  ],
+  "bpf": "(port 14443)",
+  "pcap": "/home/ubuntu/e1_all75/formal_cohortB_newnetwork/shadowtls/mixed/run01/shadowtls_mixed_run01.pcap",
+  "parse_stats": {
+    "packets_seen": 12707,
+    "flows_total": 98,
+    "samples": 98
+  },
+  "ts_done": "2026-10-12 16:54:52"
+}

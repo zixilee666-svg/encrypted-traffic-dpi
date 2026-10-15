@@ -1,0 +1,20 @@
+{
+  "version": "v3.5.1",
+  "profile": "vmess",
+  "label": "vmess",
+  "iface": "offline",
+  "runtime_s": null,
+  "run_id": "vmess__upload__r1__1791787450",
+  "n_sample": 314,
+  "ports": [
+    14443
+  ],
+  "bpf": "(port 14443)",
+  "pcap": "/home/ubuntu/e1_all75/formal_cohortB_newnetwork/vmess/upload/run01/vmess_upload_run01.pcap",
+  "parse_stats": {
+    "packets_seen": 15119,
+    "flows_total": 314,
+    "samples": 314
+  },
+  "ts_done": "2026-10-12 16:59:10"
+}
